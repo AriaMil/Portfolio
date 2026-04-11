@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gail's Barbie Portfolio - Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav aria-label="Main Navigation">
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#" id="logoutBtn">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="protectedContent">
+    <section class="hero">
+      <h1>✨ Welcome to Gail's Barbie World ✨</h1>
+      <p>Where Technology Meets Pink Perfection</p>
+      <div class="visitor-counter">
+        <p>🌟 Visitor #<span id="visitorCount">0</span> 🌟</p>
+      </div>
+      <p id="currentDate" class="date-display"></p>
+      <div id="userDisplay" class="user-welcome"></div>
+    </section>
+
+    <section>
+      <div class="about-container">
+        <img src="images/1.jpg" alt="Photo of Abegail Aquino" class="profile-pic">
+        <div>
+          <h2>💖 Abegail Guanzon Aquino 💖</h2>
+          <p>Hello! I'm Gail, a resilient, creative, and collaborative student leader. I enjoy blending academic focus with joyful curiosity and teamwork. Welcome to my pink-tastic portfolio!</p>
+          <button class="toggle-btn" data-target="moreAboutMe">Show More About Me</button>
+          <div id="moreAboutMe" class="hidden-section">
+            <h3>More About Gail</h3>
+            <p>I'm currently an IT student passionate about web development, design, and creating user-friendly experiences. When I'm not coding, you'll find me exploring new technologies, reading novels, or playing online games with friends.</p>
+            <p><strong>Fun Fact:</strong> I love Barbie movies and Chinese films! My favorite Barbie movie is "Barbie and the Diamond Castle" 🎀</p>
+          </div>
+        </div>
+      </div>
+
+      <section class="skills-container">
+        <h2>💕 My Superpowers 💕</h2>
+        <ul>
+          <li>✨ Webpage design with HTML & CSS</li>
+          <li>✨ Python/Tkinter GUI programming</li>
+          <li>✨ Responsive layouts & accessibility standards</li>
+          <li>✨ Creative presentation design with thematic color palettes</li>
+          <li>✨ Collaborative problem-solving & communication</li>
+        </ul>
+      </section>
+    </section>
+  </div>
+
+  <section id="loginRequired" class="hero">
+    <h1>🔐 Login Required 🔐</h1>
+    <p>Please <a href="login.html" style="color: #ff1493; font-weight: bold;">login</a> or <a href="register.html" style="color: #ff1493; font-weight: bold;">register</a> to view my about page.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Gail Aquino | Educational Portfolio | Made with love for Barbie and pink glitter</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

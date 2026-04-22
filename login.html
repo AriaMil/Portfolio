@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Gail's Barbie Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="hero">
+    <h1>🔐 Welcome Back! 🔐</h1>
+    <p>Login to access exclusive content</p>
+  </section>
+
+  <div class="form-container">
+    <h2>💖 Member Login</h2>
+    
+    <form id="loginForm">
+      <div class="form-group">
+        <label for="loginEmail">Email:</label>
+        <input type="email" id="loginEmail" name="email" placeholder="Enter your email" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="loginPassword">Password:</label>
+        <input type="password" id="loginPassword" name="password" placeholder="Enter your password" required minlength="6">
+      </div>
+      
+      <div class="show-password">
+        <input type="checkbox" id="togglePassword">
+        <label for="togglePassword">Show Password</label>
+      </div>
+
+      <button type="submit" class="btn">Login 💕</button>
+    </form>
+
+    <div class="auth-divider">
+      <span>or</span>
+    </div>
+
+    <div class="social-auth">
+      <button class="btn-google" id="googleAuthBtn">
+        <img src="https://img.icons8.com/color/16/000000/google-logo.png" alt="Google">
+        Continue with Google
+      </button>
+      <button class="btn-otp" id="otpAuthBtn">
+        Login with OTP
+      </button>
+    </div>
+    
+    <p style="text-align: center; margin-top: 1.5rem; color: #4b2c2c;">
+      Don't have an account? <a href="register.html" style="color: #ff1493; font-weight: bold; text-decoration: none; border-bottom: 2px solid #ff1493;">Create account here</a>
+    </p>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Gail Aquino | Educational Portfolio | Made with love for Barbie and pink glitter</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

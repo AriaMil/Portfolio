@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Gail's Barbie Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav aria-label="Main Navigation">
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#" id="logoutBtn">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="protectedContent">
+    <section class="hero">
+      <h1>📬 Let's Connect! 📬</h1>
+      <p>I'd love to hear from you!</p>
+    </section>
+
+    <div class="form-container">
+      <h2>💌 Send Me a Message</h2>
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="contactName">Your Name:</label>
+          <input type="text" id="contactName" name="name" placeholder="Enter your name" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="contactEmail">Your Email:</label>
+          <input type="email" id="contactEmail" name="email" placeholder="Enter your email" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="contactSubject">Subject:</label>
+          <select id="contactSubject" name="subject">
+            <option value="general">General Inquiry</option>
+            <option value="project">Project Discussion</option>
+            <option value="collaboration">Collaboration</option>
+            <option value="feedback">Feedback</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="contactMessage">Your Message:</label>
+          <textarea id="contactMessage" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+        </div>
+        
+        <button type="submit" class="btn">Send Message 💕</button>
+      </form>
+    </div>
+
+    <div class="skills-container">
+      <h2>📞 Other Ways to Reach Me</h2>
+      <p>Email: <a href="mailto:abegailaquino.olshco@gmail.com">abegailaquino.olshco@gmail.com</a></p>
+      <p>Phone: <a href="tel:+639770764663">+63 977 076 4663</a></p>
+      <button class="toggle-btn" data-target="socialLinks">Show Social Links</button>
+      <div id="socialLinks" class="hidden-section">
+        <p>🐦 Twitter: @gail_aquino</p>
+        <p>📷 Instagram: @gail.codes</p>
+        <p>💼 LinkedIn: Abegail Aquino</p>
+        <p>🐙 GitHub: gail-aquino</p>
+      </div>
+    </div>
+  </div>
+
+  <section id="loginRequired" class="hero">
+    <h1>🔐 Login Required 🔐</h1>
+    <p>Please <a href="login.html" style="color: #ff1493; font-weight: bold;">login</a> or <a href="register.html" style="color: #ff1493; font-weight: bold;">register</a> to contact me.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Gail Aquino | Educational Portfolio | Made with love for Barbie and pink glitter</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

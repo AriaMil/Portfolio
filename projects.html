@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Gail's Barbie Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav aria-label="Main Navigation">
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#" id="logoutBtn">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="protectedContent">
+    <section class="hero">
+      <h1>💖 My Creative Projects 💖</h1>
+      <p>Check out my amazing work in web development!</p>
+    </section>
+
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="images/project1.jpg" alt="Plainstatic Page">
+        <h3>My Plainstatic Page</h3>
+        <p>A clean and simple static webpage showcasing basic HTML structure.</p>
+        <a href="L1.1/my_painstatic_page.html" target="_blank" class="btn">View Project</a>
+      </div>
+
+      <div class="project-card">
+        <img src="images/project2.jpg" alt="Enhanced Page">
+        <h3>My Enhanced Page</h3>
+        <p>An enhanced version with CSS styling and improved layout.</p>
+        <a href="L1.2/aquino.html" target="_blank" class="btn">View Project</a>
+      </div>
+
+      <div class="project-card">
+        <img src="images/storybook.jpeg" alt="Kid Storybook">
+        <h3>Interactive Kid Storybook</h3>
+        <p>A fun and interactive storybook for children with colorful design.</p>
+        <a href="L2/index.html" target="_blank" class="btn">View Project</a>
+      </div>
+    </div>
+
+    <div class="skills-container">
+      <h2>🎯 Project Features</h2>
+      <button class="toggle-btn" data-target="projectFeatures">Show/Hide Features</button>
+      <div id="projectFeatures" class="hidden-section">
+        <ul>
+          <li>✨ Responsive design for all devices</li>
+          <li>✨ Interactive elements with JavaScript</li>
+          <li>✨ Clean and modern UI</li>
+          <li>✨ Accessible and semantic HTML</li>
+          <li>✨ Barbie-inspired color palette</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <section id="loginRequired" class="hero">
+    <h1>🔐 Login Required 🔐</h1>
+    <p>Please <a href="login.html" style="color: #ff1493; font-weight: bold;">login</a> or <a href="register.html" style="color: #ff1493; font-weight: bold;">register</a> to view my projects.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Gail Aquino | Educational Portfolio | Made with love for Barbie and pink glitter</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

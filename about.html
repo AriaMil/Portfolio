@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Gail's Barbie Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav aria-label="Main Navigation">
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#" id="logoutBtn">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="protectedContent">
+    <section class="about-section">
+      <div class="about-container">
+        <img src="images/1.jpg" alt="Photo of Abegail Aquino" class="profile-pic">
+        <div class="about-details">
+          <h1>💖 About Me 💖</h1>
+          <p><strong>Name:</strong> Abegail Guanzon Aquino</p>
+          <p><strong>Age:</strong> 19</p>
+          <p><strong>Birthday:</strong> October 31, 2006</p>
+          <p><strong>Zodiac:</strong> Scorpio 🦂</p>
+          <p><strong>Favorite Color:</strong> Pink! 💕</p>
+          <p>Hello! I am Gail, a college student majoring in Information Technology. This portfolio highlights my creative and technical projects, all wrapped in a Barbie-inspired theme!</p>
+        </div>
+      </div>
+
+      <div class="skills-container">
+        <h2>📚 My Classes This Semester</h2>
+        <ul>
+          <li>MS 102 Quantitative Method</li>
+          <li>WS 101 Web System</li>
+          <li>PF 102 Event-Driven Programming</li>
+        </ul>
+      </div>
+
+      <div class="skills-container">
+        <h2>🎬 My Favorite Movies</h2>
+        <ul>
+          <li>Barbie Movies Collection</li>
+          <li>Chinese Films</li>
+          <li>Anime</li>
+        </ul>
+      </div>
+
+      <div class="skills-container">
+        <h2>😊 My Moods Today</h2>
+        <div class="mood-display">
+          <p>🎉 Happy</p>
+          <p>😊 Thankful</p>
+          <p>💖 Excited</p>
+          <p>✨ Creative</p>
+        </div>
+        <button class="toggle-btn" data-target="moodDetails">Show Mood Details</button>
+        <div id="moodDetails" class="hidden-section">
+          <p>Today I'm feeling extra creative and ready to code! The pink theme makes me happy and inspired to create beautiful things. 💻💕</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section id="loginRequired" class="hero">
+    <h1>🔐 Login Required 🔐</h1>
+    <p>Please <a href="login.html" style="color: #ff1493; font-weight: bold;">login</a> or <a href="register.html" style="color: #ff1493; font-weight: bold;">register</a> to view my about page.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Gail Aquino | Educational Portfolio | Made with love for Barbie and pink glitter</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
